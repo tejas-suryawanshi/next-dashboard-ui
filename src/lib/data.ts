@@ -176,14 +176,14 @@ export const studentsData = [
   },
   {
     id: 5,
-    studentId: "69",
-    name: "Mia Khalifa",
-    email: "NaughtyMiaKh@gmail.com",
+    studentId: "1234567890",
+    name: "Kia Munros",
+    email: "Mia9oty@gmail.com",
     photo:
       "https://i.tribune.com.pk/media/images/1491840-miax-1503763617/1491840-miax-1503763617.jpg",
     phone: "1234567890",
     grade: 5,
-    class: "BangBros",
+    class: "6A",
     address: "123 Main St, Anytown, USA",
   },
   {
