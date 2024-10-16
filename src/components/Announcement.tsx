@@ -29,13 +29,13 @@ const Announcement = () => {
                 </div>
                 <p className="text-sm text-gray-900 mt-2">----------------------------------------------</p>
             </div>
-            <div className="bg-[#00f5d4] rounded-md p-4">
+            {/* <div className="bg-[#00f5d4] rounded-md p-4">
                 <div className="flex items-center justify-between">
                     <h2 className="font-medium">Announcement 4 !</h2>
                     <span className="text-xs text-gray-500 bg-white font-mono rounded-md px-y py-1">14-09-2024</span>
                 </div>
                 <p className="text-sm text-gray-900 mt-2">----------------------------------------------</p>
-            </div>
+            </div> */}
         </div>
     </div>
   )

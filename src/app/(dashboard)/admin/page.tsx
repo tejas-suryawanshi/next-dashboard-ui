@@ -1,6 +1,5 @@
 import Announcement from "@/components/Announcement"
 import AttendanceChart from "@/components/AttendanceChart"
-import AttendenceChart from "@/components/AttendanceChart"
 import CountChart from "@/components/CountChart"
 import EventCalendar from "@/components/EventCalendar"
 import FinanceChart from "@/components/FinanceChart"

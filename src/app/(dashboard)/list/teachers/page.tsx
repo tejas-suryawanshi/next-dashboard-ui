@@ -1,3 +1,4 @@
+import FormModal from "@/components/FormModal"
 import ListTable from "@/components/ListTable"
 import Pagination from "@/components/Pagination"
 import TableSearch from "@/components/TableSearch"
@@ -48,7 +49,7 @@ const columns = [
     className:"hidden lg:table-cell"
   },
   {
-    header:"action",
+    header:"Action",
     accessor:"action",
     className:"hidden lg:table-cell"
   }
@@ -79,9 +80,10 @@ const TeachersListPage = () => {
           </button>
           </Link>
           {role === "admin" && (
-          <button className="w-7 h-7 flex items-center justify-center rounded-full bg-LamaPurple">
-            <Image src="/delete.png" alt="" width={16} height={16} />
-          </button>
+          // <button className="w-7 h-7 flex items-center justify-center rounded-full bg-LamaPurple">
+          //   <Image src="/delete.png" alt="" width={16} height={16} />
+          // </button>
+          <FormModal table="teacher" type="delete" id={item.id}/>
           )}
         </div>
       </td>
@@ -103,9 +105,10 @@ const TeachersListPage = () => {
                       <Image src="/sort.png" alt="" width={16} height={16}/>
                     </button>
                  {role === "admin" && (
-                    <button className="w-8 h-8 flex items-center justify-center rounded-full bg-[#06d6a0]">
-                       <Image src="/plus.png" alt="" width={16} height={16}/>
-                    </button>
+                    // <button className="w-8 h-8 flex items-center justify-center rounded-full bg-[#06d6a0]">
+                    //    <Image src="/plus.png" alt="" width={16} height={16}/>
+                    // </button>
+                    <FormModal table="teacher" type="create"/>
                  )}
                 </div>
             </div>

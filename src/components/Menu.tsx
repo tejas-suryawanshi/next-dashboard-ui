@@ -48,15 +48,15 @@ const menuItems = [
         href: "/list/lessons",
         visible: ["admin", "teacher"],
       },
-      {
-        icon: "/exam.png",
-        label: "Exams",
-        href: "/list/exams",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
+    // {
+    //   icon: "/exam.png",
+    //   label: "Exams",
+    //   href: "/list/exams",
+    //   visible: ["admin", "teacher", "student", "parent"],
+    // },
       {
         icon: "/assignment.png",
-        label: "Assignments",
+        label: "Home Work",
         href: "/list/assignments",
         visible: ["admin", "teacher", "student", "parent"],
       },
@@ -118,14 +118,14 @@ const menuItems = [
 ];
 const Menu = () => {
   return (
-    <div className="mt-4 text-lg">
+    <div className=" text-lg">
       {menuItems.map(i=>(
-      <div className="flex-col gap-2" key={i.title}>
-        <span className=" hidden lg:block text-gray-500 font-light my-4 text-center">{i.title}</span>
+      <div className="flex-col text-center items-center gap-2" key={i.title}>
+        <span className=" hidden lg:block text-gray-600 font-light my-4 text-center">{i.title}</span>
        {i.items.map(item=>{
         if(item.visible.includes(role)){
           return(
-            <Link href={item.href} key={item.label} className="flex items-center md:px-2 justify-center lg:justify-start gap-4 rounded-xl hover:bg-[#e9ff70] hover:text-[#06d6a0] hover:scale-105 transition-all duration-300 ease-in-out border-l-4 border-transparent text-gray-800 py-4 pl-2 pr-2">
+            <Link href={item.href} key={item.label} className="flex items-center md:px-2 justify-center lg:justify-start gap-4 rounded-xl hover:bg-[#eee] hover:text-[#3D50FD]  hover:scale-105 transition-all duration-300 ease-in-out border-l-4 border-transparent  py-4 pl-2 pr-2 hover:font-bold ">
             <Image src={item.icon} alt="" width={30} height={30}/>
             <span className="hidden lg:block">{item.label}</span>
             </Link> 
